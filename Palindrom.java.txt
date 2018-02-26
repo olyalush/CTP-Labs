@@ -1,0 +1,29 @@
+// ласс показыват показывает €вл€етс€ ли строка полиндромом
+public class Palindrome 
+{
+// метод получает массив, затем в строку сохран€ет слова и сравнивает изменЄнную строку с начальной
+	public static void main(String[] args) {
+		for (int i = 0; i < args.length; i++) 
+		{
+			String s = args[i];
+			if (isPalindrome(s)) 
+			System.out.println(s+ " ѕалиндром ");
+			else System.out.println(s+ " Ќе палиндром ");
+		} 
+	}
+//измен€ет строку 
+	public static String reverseString(String s)
+	{
+		String rev="";
+		for (int i = s.length()-1; i >=0; i--) 
+		{
+			rev+s.charAt(i);
+		}
+		return rev;
+	}
+//метод создаЄт обратную версию, а затем сравнивает еЄ с первоначальными данными
+	public static boolean isPalindrome(String s)
+	{
+	return s1.equals(reverseString(s));
+	}
+}
